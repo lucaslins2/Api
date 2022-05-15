@@ -27,7 +27,7 @@
 							</tbody>
 						</table>
 					</div>
-				<button class="btn btn-primary form-control-lg ml-3" id="btn-abrirCaixa" disabled="">Abrir Caixa F(4)</button>
+				<button class="btn btn-primary form-control-lg ml-3" id="btn-abrirCaixa" onclick="MsgBox('Voce Deseja Abrir o Caixa?');">Abrir Caixa F(4)</button>
 					
 					
 					
@@ -233,4 +233,3 @@
 		</section>--->
 	</div>
 
-    <script src="Administracao_Cantina/js/Vendas/pageVendas.js"></script>
