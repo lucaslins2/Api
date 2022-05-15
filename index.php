@@ -50,7 +50,7 @@
 						<li><div class="link-dark rounded" onclick="trocarDePagina('Vendas/historicoCaixa.php')">Abertura e Fechamento do Caixa</div></li>
 					</ul>
 					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center">
-						<li><a class="link-dark rounded" onclick="trocarDePagina('test.php')">Caixa</a></li>
+						<li><a class="link-dark rounded" onclick="trocarDePagina('Vendas/Caixa.php')">Caixa</a></li>
 					</ul>
 					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center">
 						<li><a class="link-dark rounded" onclick="trocarDePagina('test.php')">Relatorios</a></li>

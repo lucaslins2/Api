@@ -4,7 +4,7 @@
 		<section class="row" id="compra">
 			<div class="col-md-2" id="listagem" 	>
 				<div id="lista">
-					<h3>Historico Caixa</h3>
+					<h3 class="TituloH3" >Historico Caixa</h3>
 					<div class="form-group">
 						<span class="form-label">Status do Caixa</span></br>
 						<select class="form-control" name="" id="">
@@ -27,6 +27,7 @@
 							</tbody>
 						</table>
 					</div>
+					<h3 class="TituloH3" >ABERTO</h3>
 				<button class="btn btn-primary form-control-lg ml-3" id="btn-abrirCaixa" onclick="MsgBox('Voce Deseja Abrir o Caixa?');">Abrir Caixa F(4)</button>
 					
 					
@@ -40,7 +41,7 @@
 			<div class="col-md-6" id="adicionar">
 				<div class="row" id="detalhes">
 				<div class="w-100">
-						<h3>Detalhes do Historico do Caixa</h3>
+						<h3 class="TituloH3" >Detalhes do Historico do Caixa</h3>
 					</div>
 		  <div class="col-md-12" id="listagem">
 					<!--<p id="total-carrinho">Ultimos fechamentos</p>-->
@@ -158,7 +159,74 @@
 				</div>
 			</div>
 		-->
-			<div class="col-md-2">
+		
+			<div class="col-md-2" id="listagem" 	>
+				<div id="lista">
+					<h3>Resumo do Caixa</h3>
+					<div class="form-group">
+						<br>
+							<div class="col-md-12">	<span class="form-label">Saldo Inicial: </span><span class="CxDiv">19,99</span></div></br>
+					
+					</div>
+					<p id="total-carrinho">Totais de Entrada</p>
+					<div class="table-wrapper-scroll-y">
+						<table class="mx-auto" id="carrinho2">
+							<thead>
+							<th>Dinheiro:  </th>
+							<th>R$: 30,00 </th>
+							</thead>
+							<thead>
+							<th>PIX: </th>
+							<th>R$: 3,99</th>
+							</thead>
+							<thead>
+							<th>Cartao Credito: </th>
+							<th>R$ 3,99</th>
+							</thead>
+							<thead>
+							<th>Cartao Debito: </th>
+							<th>R$ 3,99</th>
+							</thead>
+							<thead>
+							<th>Total de Entrada: </th>
+							<th>R$ 3,99</th>
+							</thead>
+						<!--	<tbody>
+								<tr id="carrinho-vazio">
+									<td colspan="5" style="text-align: center; color: #888; padding: 10px;">Não há
+										produtos na compra.</td>
+								</tr>
+							</tbody>!-->
+						</table>
+					</div>
+					<p id="total-carrinho">Totais de Saida</p>
+					<div class="table-wrapper-scroll-y">
+						<table class="mx-auto" id="carrinho2">
+							<thead>
+							<th>Dinheiro:  </th>
+							<th>R$: 30,00 </th>
+							</thead>
+							<thead>
+							<th>PIX</th>
+							<th>R$: 3,99</th>
+							</thead>
+						
+						<!--	<tbody>
+								<tr id="carrinho-vazio">
+									<td colspan="5" style="text-align: center; color: #888; padding: 10px;">Não há
+										produtos na compra.</td>
+								</tr>
+							</tbody>!-->
+						</table>
+					</div>
+				<button class="btn btn-primary form-control-lg ml-3" id="btn-abrirCaixa" onclick="MsgBox('Voce Deseja Fechar o Caixa?');">Abrir Caixa F(4)</button>
+					
+					
+					
+
+
+				</div>
+
 
 			</div>
 		</section>

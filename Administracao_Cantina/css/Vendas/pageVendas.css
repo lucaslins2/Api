@@ -10,7 +10,7 @@
 
 /*font-family: 'Lato', sans-serif;
 font-family: 'Titillium Web', sans-serif;*/
-
+/*
  body {
  	background-color: #ffffff;
  	font-family: 'Lato',sans-serif;
@@ -30,7 +30,14 @@ font-family: 'Titillium Web', sans-serif;*/
  	background-color: #dc3545;;
  	color: white;
  }
+ */
+.TituloH3{
 
+	padding: 10px 15px;
+ 	background-color: #dc3545;;
+ 	color: white;
+
+}
  #total-carrinho {
    background-color: #002A3A;
    width: 98%;
@@ -171,7 +178,7 @@ font-family: 'Titillium Web', sans-serif;*/
 }
 #btn-abrirCaixa{
 
-	margin-top:95%;
+	margin-top: 70% !important;
 	margin-left: 23% !important;;
 
 
@@ -228,5 +235,11 @@ font-family: 'Titillium Web', sans-serif;*/
   .BtnsFin{
 
    margin-top: 50%!important;
+
+  }
+  .CxDiv{
+	width: 30px;
+	height: 20px;
+	border: 1px solid red;
 
   }
