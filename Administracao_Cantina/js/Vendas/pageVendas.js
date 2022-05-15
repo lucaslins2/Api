@@ -11,11 +11,10 @@ $(document).ready(function(){
   
     Swal.fire({
       title: pergunta,
-      showDenyButton: false,
-      showCancelButton: true,
+      showDenyButton: true,
       denyButtonText: 'Não',
-      cancelButtonText:'Cancelar',
-      confirmButtonText: 'Sim'
+      confirmButtonText: 'Sim',
+      reverseButtons: true
 
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */

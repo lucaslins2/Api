@@ -1,5 +1,7 @@
 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
+
 <div class="h1 mb-4">Administração de Pedido</div>
+
     <div class="card" style="width: 25rem;">
         <div class="card-body">
             <form>
