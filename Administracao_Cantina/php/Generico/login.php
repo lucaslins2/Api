@@ -4,14 +4,14 @@
 
     <div class="card" style="width: 25rem;">
         <div class="card-body">
-            <form>
+            <form id="formulario">
                 <div class="mb-3">
                     <label for="inputLogin" class="form-label">Login</label>
-                    <input type="login" class="form-control" id="inputLogin">
+                    <input type="login" class="form-control" id="inputLogin" name="inputLogin">
                 </div>
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword">
+                    <input type="password" class="form-control" id="inputPassword" name="inputPassword">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="Check1">
@@ -23,3 +23,26 @@
     </div>
 
 </div>
+
+
+<script>
+    const myForm = document.getElementById("formulario");
+
+myForm.addEventListener("submit",(e)=>{
+    e.preventDefault();
+
+    $.ajax({
+        url: '/Administracao_Cantina/php/Generico/validarLogin.php',
+        type:'POST',
+        data: $('#formulario').serialize(),
+        success: function(result){
+            $(".resultado").html(result);
+        },
+        //Caso de algum erro
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            erroPadrao(errorThrown);
+        }
+    });
+})
+
+</script>
