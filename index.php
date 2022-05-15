@@ -8,7 +8,8 @@
 
     	<!-- CSS pdrão -->
 	<link rel="stylesheet" href="Administracao_Cantina/css/styles.css">
-
+ 	<!-- CSS Vendas -->
+ 	<link rel="stylesheet" href="Administracao_Cantina/css/Vendas/pageVendas.css">
     <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Administração de pedido</title>
@@ -32,10 +33,27 @@
 			<li class="mb-1">
 				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
 						data-bs-target="#home-collapse" aria-expanded="false" onclick="trocarDePagina('test.php')">Estoque
-        </button>
+       				 </button>
 				<div class="collapse" id="home-collapse">
 					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center">
 						<li><a href="{{URL}}/consultar_produto" class="link-dark rounded">Consultar Produto</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="mb-1">
+				<a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+						data-bs-target="#vendas-collapse" aria-expanded="false">
+					Vendas
+				</a>
+				<div class="collapse" id="vendas-collapse">
+					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center">
+						<li><div class="link-dark rounded" onclick="trocarDePagina('Vendas/historicoCaixa.php')">Abertura e Fechamento do Caixa</div></li>
+					</ul>
+					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center">
+						<li><a class="link-dark rounded" onclick="trocarDePagina('test.php')">Caixa</a></li>
+					</ul>
+					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center">
+						<li><a class="link-dark rounded" onclick="trocarDePagina('test.php')">Relatorios</a></li>
 					</ul>
 				</div>
 			</li>
@@ -123,5 +141,8 @@
 
     <!-- Script do Allan, não sei o que isso faz -->
     <script src="Administracao_Cantina/js/scripts.js"></script>
+
+	<!-- Script Vendas-->
+    <script src="Administracao_Cantina/js/Vendas/pageVendas.js"></script>
   </body>
 </html>
