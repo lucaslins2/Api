@@ -14,7 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Administração de pedido</title>
   </head>
-  <body>
+  <body onload="trocarDePagina('Generico/login.php')">
     <?php include_once 'Administracao_Cantina/controller/conexao.php' ?>
 
 <div class="d-flex" id="wrapper">
@@ -31,12 +31,12 @@
 	<div class="list-group list-group-flush">
 		<ul class="list-unstyled ps-0">
 			<li class="mb-1">
-				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-						data-bs-target="#home-collapse" aria-expanded="false" onclick="trocarDePagina('test.php')">Estoque
-       				 </button>
+				<a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+						data-bs-target="#home-collapse" aria-expanded="false">Estoque
+				</a>
 				<div class="collapse" id="home-collapse">
 					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center">
-						<li><a href="{{URL}}/consultar_produto" class="link-dark rounded">Consultar Produto</a></li>
+						<li><a class="link-dark rounded" onclick="trocarDePagina('test.php')">Consultar Produto</a></li>
 					</ul>
 				</div>
 			</li>
@@ -82,7 +82,7 @@
 			</a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-					<li class="nav-item active"><a class="nav-link" href="{{URL}}/">
+					<li class="nav-item active"><a class="nav-link" href="index.php">
 						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-house"
 							 viewBox="0 0 16 16">
 							<path fill-rule="evenodd"
@@ -103,7 +103,7 @@
 							</svg>
 						</a>
 						<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="{{URL}}/">Home</a>
+							<a class="dropdown-item" href="index.php">Home</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#!">Sair</a>
 						</div>
@@ -114,7 +114,7 @@
 
 	</nav>
 	
-  <div class="resultado">a<div>
+  <div class="resultado"><div>
 </div>
 
 
