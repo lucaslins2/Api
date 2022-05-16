@@ -7,11 +7,11 @@
             <form id="formulario">
                 <div class="mb-3">
                     <label for="inputLogin" class="form-label">Login</label>
-                    <input type="login" class="form-control" id="inputLogin" name="inputLogin">
+                    <input type="login" class="form-control" id="inputLogin" name="login" required>
                 </div>
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" name="inputPassword">
+                    <input type="password" class="form-control" id="inputPassword" name="password" required>
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="Check1">
@@ -36,7 +36,7 @@ myForm.addEventListener("submit",(e)=>{
         type:'POST',
         data: $('#formulario').serialize(),
         success: function(result){
-            $(".resultado").html(result);
+            window.location.assign("index.php");
         },
         //Caso de algum erro
         error:function(XMLHttpRequest, textStatus, errorThrown){

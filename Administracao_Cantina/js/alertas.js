@@ -9,3 +9,14 @@ function erroPadrao(erroTexto){
         showCloseButton: true
     })
 }
+
+function erroPadrao2(erroTexto,textoString){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: textoString,
+        footer:'Erro: '+ erroTexto,
+        showConfirmButton: false,
+        showCloseButton: true
+    })
+}

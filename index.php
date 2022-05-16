@@ -14,8 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Administração de pedido</title>
   </head>
-  <body onload="trocarDePagina('Generico/login.php')">
-    <?php include_once 'Administracao_Cantina/controller/conexao.php' ?>
+  <body onload="trocarDePagina('Generico/validarSessao.php')">
 
 <div class="d-flex" id="wrapper">
 <div class="border-end bg-light" id="sidebar-wrapper">
@@ -105,7 +104,7 @@
 						<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="index.php">Home</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#!">Sair</a>
+							<a class="dropdown-item" onclick="trocarDePagina('Generico/sair.php')">Sair</a>
 						</div>
 					</li>
 				</ul>
