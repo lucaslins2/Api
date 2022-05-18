@@ -2,7 +2,7 @@
 
 <div class="h1 mb-4">Administração de Pedido</div>
 
-    <div class="card" style="width: 25rem;">
+    <div class="card" style="width: 20rem;">
         <div class="card-body">
             <form id="formulario">
                 <div class="mb-3">
