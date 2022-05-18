@@ -107,7 +107,7 @@
 			</a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-					<li class="nav-item active"><a class="nav-link" href="index.php">
+					<li class="nav-item active"><a class="nav-link" onclick="trocarDePagina('Generico/validarSessao.php')">
 						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="white" class="bi bi-house"
 							 viewBox="0 0 16 16">
 							<path fill-rule="evenodd"
@@ -128,7 +128,7 @@
 							</svg>
 						</a>
 						<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="index.php">Home</a>
+							<a class="dropdown-item" onclick="trocarDePagina('Generico/validarSessao.php')">Home</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" onclick="trocarDePagina('Generico/sair.php')">Sair</a>
 						</div>
