@@ -15,7 +15,15 @@
     <title>Administração de pedido</title>
   </head>
   <?php include_once 'Administracao_Cantina/php/Generico/iniciarSessao.php'; ?>
-  <body onload="trocarDePagina('Generico/validarSessao.php')" <?php if(!isset($_SESSION['logado'])){ echo 'class="sb-sidenav-toggled"' ?> <?php } ?>>
+
+   <?php 
+  	if (isset($_SESSION['urlEndereco'])){
+		$urlEndereco = "trocarDePagina('".$_SESSION['urlEndereco']."')";
+  	}else{
+		$urlEndereco = "trocarDePagina('Generico/validarSessao.php')";
+	}
+  	?>
+  <body onload= <?php echo $urlEndereco ?>  <?php if(!isset($_SESSION['logado'])){ echo 'class="sb-sidenav-toggled"' ?> <?php } ?>>
 
   <?php 
 
