@@ -36,7 +36,7 @@ myForm.addEventListener("submit",(e)=>{
         type:'POST',
         data: $('#formulario').serialize(),
         success: function(result){
-            window.location.assign("index.php");
+            trocarDePagina('Generico/validarSessao.php');
         },
         //Caso de algum erro
         error:function(XMLHttpRequest, textStatus, errorThrown){
