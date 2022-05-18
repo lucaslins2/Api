@@ -166,7 +166,7 @@
     <script src="Administracao_Cantina/js/alertas.js"></script>
 
     <!-- Script Ajax para trocar de pagina de forma dinamica -->
-    <script src="Administracao_Cantina/js/trocarDePagina"></script>
+    <script src="Administracao_Cantina/js/trocarDePagina.js"></script>
 
     <!-- Script do Allan, não sei o que isso faz -->
     <script src="Administracao_Cantina/js/scripts.js"></script>
