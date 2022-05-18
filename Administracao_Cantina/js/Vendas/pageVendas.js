@@ -24,6 +24,20 @@ $(document).ready(function(){
     })
 }
 
+function MetodosPGgTO(){
+    Swal.fire({
+	  title: 'Informe o valor de pagamento: ',
+	  input: 'text',
+	  inputPlaceholder: 'Digite o valor a ser Pago!',
+    showDenyButton: true,
+    denyButtonText: 'Não',
+    confirmButtonText: 'Sim',
+    reverseButtons: true
+	})
+	
+}
+
+
 function ModalAjax(urlEndereco){
     $.ajax({
         url: '/Administracao_Cantina/php/' + urlEndereco,
@@ -56,3 +70,11 @@ function ModalAjax(urlEndereco){
 
 
 }
+
+function MsgConfir(){Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Pedido Finalizado com',
+  showConfirmButton: false,
+  timer: 1500
+})}

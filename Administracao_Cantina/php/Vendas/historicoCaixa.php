@@ -20,6 +20,11 @@
 							<th>Saldo Final.</th>
 							</thead>
 							<tbody>
+									<tr>
+									<td>18/05/2022</td>
+										<td>R$ 3000,00</td>
+									</tr>
+
 								<tr id="carrinho-vazio">
 									<td colspan="5" style="text-align: center; color: #888; padding: 10px;">Não há
 										produtos na compra.</td>
@@ -27,7 +32,7 @@
 							</tbody>
 						</table>
 					</div>
-					<h3 class="TituloH3" >ABERTO</h3>
+					<h3 class="TituloH3" >FECHADO</h3>
 				<button class="btn btn-primary form-control-lg ml-3" id="btn-abrirCaixa" onclick="MsgBox('Voce Deseja Abrir o Caixa?');">Abrir Caixa F(4)</button>
 					
 					
@@ -63,8 +68,8 @@
 								<tr style="text-align: center">
 								<td style="text-align: center">01/01/2000</td>
 								<td>F</td>	
-								<td>19,90</td>
-								<td>21,9922222</td>	
+								<td>R$19,90</td>
+								<td>R$21,99 </td>	
 								<td>0</td>	
 								<td>0</td>
 								<td>0</td>
@@ -160,9 +165,9 @@
 			</div>
 		-->
 		
-			<div class="col-md-2" id="listagem" 	>
+			<div class="col-md-2" id="listagem">
 				<div id="lista">
-					<h3>Resumo do Caixa</h3>
+					<h3 class="TituloH3">Resumo do Caixa</h3>
 					<div class="form-group">
 						<br>
 							<div class="col-md-12">	<span class="form-label">Saldo Inicial: </span><span class="CxDiv">19,99</span></div></br>
@@ -219,7 +224,7 @@
 							</tbody>!-->
 						</table>
 					</div>
-				<button class="btn btn-primary form-control-lg ml-3" id="btn-abrirCaixa" onclick="MsgBox('Voce Deseja Fechar o Caixa?');">Abrir Caixa F(4)</button>
+				<button class="btn btn-primary form-control-lg ml-3" id="btn-abrirCaixa" onclick="MsgBox('Voce Deseja Fechar o Caixa?');">Fechar Caixa F(2)</button>
 					
 					
 					
