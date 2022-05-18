@@ -14,8 +14,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Administração de pedido</title>
   </head>
-  <body onload="trocarDePagina('Generico/validarSessao.php')">
+  <?php include_once 'Administracao_Cantina/php/Generico/iniciarSessao.php'; ?>
+  <body onload="trocarDePagina('Generico/validarSessao.php')" <?php if(!isset($_SESSION['logado'])){ echo 'class="sb-sidenav-toggled"' ?> <?php } ?>>
 
+  <?php 
+
+  	if(isset($_SESSION['logado'])){
+
+  ?>
 <div class="d-flex" id="wrapper">
 <div class="border-end bg-light" id="sidebar-wrapper">
 	<div class="text-white text-center">
@@ -60,8 +66,20 @@
 	</div>
 </div>
 
+<?php
+
+	}
+
+?>
+
 <div id="page-content-wrapper">
-	<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+	<nav class="navbar navbar-expand-lg navbar-light bg-danger" style="min-height: 62px;">
+	
+	<?php
+
+		if(isset($_SESSION['logado'])){
+
+	?>
 		<div class="container-fluid">
 			<a class="text-dark" id="sidebarToggle" type="button">
 				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="white" class="bi bi-list"
@@ -111,9 +129,13 @@
 			</div>
 		</div>
 
+		<?php
+			}
+		?>
+
 	</nav>
 	
-  <div class="resultado"><div>
+  <div class="resultado" style="height: calc(100vh - 62px)"><div>
 </div>
 
 
