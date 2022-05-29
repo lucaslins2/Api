@@ -22,7 +22,8 @@ if($stmt->rowCount() > 0){
         "status" => true,
         "message" => "Successfully Login!",
         "id" => $row['id'],
-        "username" => $row['username']
+        "username" => $row['username'],
+        "email" => $row['email'],
     );
 }
 else{
